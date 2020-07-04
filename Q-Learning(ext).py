@@ -38,7 +38,7 @@ def optimal_route(start_location, end_location):
     new_rewards[ending_state, ending_state] = 999
 
     Q = np.array(np.zeros([9,9]))
-
+    
     for i in range(1000):
         current_state = np.random.randint(0,9)
         playable_action = []
